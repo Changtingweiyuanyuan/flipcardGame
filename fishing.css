@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align:center;
+    overflow: hidden;
+    background: linear-gradient(0deg, #ffffff10 0%, #E8B45340 50%, #B3591A 100%);
+    font-family: 'Ma Shan Zheng', cursive !important;
+}
+#bg2{
+    background: url('bg.png');
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    left:0;
+    top:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+}
+.content{
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content: space-between;
+    margin-top:150px;
+    width:320px;
+    height:320px;
+    padding:10px;
+    /* background: #B3591A80; */
+    background: rgba(150, 35, 15, 0.884);
+    background: #222222;
+    border-radius: 5px;
+}
+.content > img{
+    flex:0 0 100px;
+    background:yellow;
+    border-radius: 5px;
+    cursor:url("cursor.png"),pointer;
+}
+
+.control{
+    margin-top:5vh;
+    font-size:2em;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:320px;
+}
+.msg button{
+    font-size:2em;
+    border:none;
+}
+.msg button:hover{
+    text-decoration:underline;
+}
+
+#expound{
+    position:absolute;
+    top:10%;
+    left:5%;
+    writing-mode: vertical-rl;
+    font-size: 1.5em;
+}
+
+@media (max-width: 580px) {
+    #expound{
+        width:100vw;
+        position:absolute;
+        display:flex;
+        flex-flow:column wrap;
+        left:0;
+        align-items: center;
+        justify-content: center;
+        writing-mode:horizontal-tb;
+        font-size: 1.2em;
+    }
+    .msg button{
+        font-size:1.5em;
+    }
+    .control{
+        font-size:1.4em;
+    }
+}
