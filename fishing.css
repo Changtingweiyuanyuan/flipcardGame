@@ -31,7 +31,6 @@ body{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height:500px;
 }
 .content{
     display:flex;
@@ -39,10 +38,9 @@ body{
     align-content:space-between;
     justify-content: space-between;
     margin-top:150px;
-    width:320px;
-    height:320px;
+    width:340px;
+    height:340px;
     padding:10px;
-    /* background: #B3591A80; */
     background: rgba(150, 35, 15, 0.884);
     background: #222222;
     border-radius: 5px;
@@ -55,8 +53,8 @@ body{
 }
 
 .control{
-    margin-top:5vh;
-    font-size:2em;
+    margin-top:1vh;
+    font-size:1.8em;
 }
 .msg{
     display: flex;
@@ -66,7 +64,6 @@ body{
 }
 .msg button{
     font-size:2em;
-    border:none;
 }
 .msg button:hover{
     text-decoration:underline;
